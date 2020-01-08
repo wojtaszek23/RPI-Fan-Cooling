@@ -34,12 +34,13 @@ function set_pin_value() {
 }
 
 function main_loop () {
+  date
+  echo START script $0
   current_state="not cooling"
   init_pin $PIN out
   
   while [ 1 ]
   do
-    date
     get_temperature
     current_temperature=$?
     case $current_state in
@@ -57,8 +58,9 @@ function main_loop () {
           echo stop cooling
         fi
         ;;
-        echo $current_state, temperature: $current_temperature
     esac
+    date
+    echo $current_state , temperature: $current_temperature
 
     sleep $SLEEP_TIME
   done
