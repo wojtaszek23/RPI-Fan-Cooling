@@ -11,15 +11,26 @@ If You see well, You will also find how to connect fan to raspberry pi's pins, o
 
 To control fan, I had to connect fan to raspberry pi's ground through a transistor, which works as switcher in my case. I used of this tutorial and it should be good enough:
 https://howchoo.com/g/ote2mjkzzta/control-raspberry-pi-fan-temperature-python
+Attention! One different is that instead of using pin number 11, I chose pin number 40 (in executing script and on physical board of course) to control fan wiring through resistance to transistor's base.
 
-Just clone fanCooling.sh script to localisation on Your device, wherever You want and launch it in console.
+![image](https://github.com/wojtaszek23/RPI-Fan-Cooling/blob/master/my_wires_schema.png)
+
+![image](https://github.com/wojtaszek23/RPI-Fan-Cooling/blob/master/wire_fot1.jpg)
+
+![image](https://github.com/wojtaszek23/RPI-Fan-Cooling/blob/master/wire_fot2.jpg)
+
+![image](https://github.com/wojtaszek23/RPI-Fan-Cooling/blob/master/wire_fot3.jpg)
+
+*How-to-use:* Just clone fanCooling.sh script to localisation on Your device, wherever You want and launch it in console.
 If You would like to start script in background on system booting, which I recommend, You can do it by execute the following:
 -type sudo nano /etc/rc.local and paste following line before line with command "exit 0":
+-----------------------------------------------------------------------------------------
 sudo /[absolute path to fanCooling.sh script]/fanCooling.sh >> /[absolute path to localisation, where You want to store log]/log.txt &
- 
-replace text inside [] with localisation chosen by You; reboot Your device and script should work on boot and print logs since now.
+--------------------------------------------------------------------------------------------------------------------------------------
 
-Additional bibliography:
+replace text inside [ ] with localisation chosen by You; reboot Your device and script should work on boot and print logs since now.
+
+*Additional bibliography:*
 
 To access to gpio in my script, I used of article (first half of it):
 https://forbot.pl/blog/kurs-raspberry-pi-podstawy-gpio-skrypty-id23593
