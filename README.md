@@ -1,4 +1,4 @@
-**Raspberry Pi, cooling Fan Script written in bash**
+*Raspberry Pi, cooling Fan Script written in bash*
 
 Hi, this project involves controling of cooling raspberry pi device by fan. 
 I decided to use fan to work with raspberry pi 4, because this device gets hot very easily.
@@ -21,14 +21,16 @@ Attention! One different is that instead of using pin number 11, I chose pin num
 
 ![image](https://github.com/wojtaszek23/RPI-Fan-Cooling/blob/master/wire_fot3.jpg)
 
-***How-to use:***
+**How-to use:**
 
 Just clone fanCooling.sh script to localisation on Your device, wherever You want and launch it in console.
 If You would like to start script in background on system booting, which I recommend, You can do it by execute the following:
 -type "sudo nano /etc/rc.local" in console and in editing tribe, paste following line before line of file, which contains command "exit 0":
 
------------------------------------------------------------------------------------------
-sudo /[absolute path to fanCooling.sh script]/fanCooling.sh >> /[absolute path to localisation, where You want to store log]/log.txt &
+--------------------------------------------------------------------------------------------------------------------------------------
+
+***sudo /[absolute path to fanCooling.sh script]/fanCooling.sh >> /[absolute path to localisation, where You want to store log]/log.txt &***
+
 --------------------------------------------------------------------------------------------------------------------------------------
 
 Screen of my /etc/rc.local file:
@@ -36,7 +38,7 @@ Screen of my /etc/rc.local file:
 
 replace text inside [ ] with localisation chosen by You; reboot Your device and script should work on boot and print logs since now.
 
-***Additional bibliography:***
+**Additional bibliography:**
 
 To access to gpio in my script, I used of article (first half of it):
 https://forbot.pl/blog/kurs-raspberry-pi-podstawy-gpio-skrypty-id23593
