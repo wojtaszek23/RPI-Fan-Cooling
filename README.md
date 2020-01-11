@@ -21,10 +21,12 @@ Attention! One different is that instead of using pin number 11, I chose pin num
 
 ![image](https://github.com/wojtaszek23/RPI-Fan-Cooling/blob/master/wire_fot3.jpg)
 
-***How-to-use:***
+***How-to use:***
+
 Just clone fanCooling.sh script to localisation on Your device, wherever You want and launch it in console.
 If You would like to start script in background on system booting, which I recommend, You can do it by execute the following:
 -type "sudo nano /etc/rc.local" in console and in editing tribe, paste following line before line of file, which contains command "exit 0":
+
 -----------------------------------------------------------------------------------------
 sudo /[absolute path to fanCooling.sh script]/fanCooling.sh >> /[absolute path to localisation, where You want to store log]/log.txt &
 --------------------------------------------------------------------------------------------------------------------------------------
