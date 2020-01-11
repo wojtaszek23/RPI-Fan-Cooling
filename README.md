@@ -33,10 +33,10 @@ If You would like to start script in background on system booting, which I recom
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
+replace text inside [ ] with localisation chosen by You; reboot Your device and script should work on boot and print logs since now.
+
 Screen of my /etc/rc.local file:
 ![image](https://github.com/wojtaszek23/RPI-Fan-Cooling/blob/master/prtscrn.png)
-
-replace text inside [ ] with localisation chosen by You; reboot Your device and script should work on boot and print logs since now.
 
 **Additional bibliography:**
 
