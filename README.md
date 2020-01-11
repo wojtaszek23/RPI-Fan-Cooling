@@ -1,4 +1,4 @@
-# Raspberry Pi, cooling Fan Script written in bash*
+# Raspberry Pi, cooling Fan Script written in bash
 
 Hi, this project involves controling of cooling raspberry pi device by fan. 
 I decided to use fan to work with raspberry pi 4, because this device gets hot very easily.
